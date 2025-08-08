@@ -74,6 +74,7 @@ Must be in the same folder as the executable. This file contains the input infor
 	1 								! log_flag: 1--> parameters 2 and 3 are searched in a logarithmic space; 0--> parameters 2 and 3 are searched in a linear space
 	0.9 							! Courant number 
 
+NOTE: mod_num is referred to the LSWT module. The ice module has its own numerical scheme, mainly based on CRN. In general, CRN is recommended also for the LSWT module.
 
 #### 1.2 `PSO.txt`
 
