@@ -131,7 +131,7 @@
                 !IF (Tair(j) .le. (par(9) + par(12))) THEN
                 IF (Tair(j) .le. (par(9)+par(12))) THEN
                     !IF (Tair(j) .le. par(12)) THEN
-                    Sf(j)=prec(j) ! mm H20
+                    Sf(j)=prec(j) ! m H20
                     Rf(j)=0.0d0
                 ELSE
                     Sf(j)=0.0d0
@@ -139,7 +139,7 @@
                 END IF
 
                 IF (Tair(j+1) .le. (par(9)+par(12))) THEN
-                    Sf(j+1)=prec(j+1) ! mm H20
+                    Sf(j+1)=prec(j+1) ! m H20
                     Rf(j+1)=0.0d0
                 ELSE
                     Sf(j+1)=0.0d0
@@ -265,7 +265,7 @@
                         Rnn=0.5d0*dt*gammas*(fn+fnn)
 
                         IF (Rnn .lt. 0.0d0) THEN
-                            WRITE(*,*) 'Non può essere, non deve mai entrare qui' !!!ModifiedOct2023 rimuovere la condizione se non entra mai!
+                            WRITE(*,*) 'Non puÃ² essere, non deve mai entrare qui' !!!ModifiedOct2023 rimuovere la condizione se non entra mai!
                             STOP
                             Rnn=0.0d0
                         END IF
@@ -1023,4 +1023,5 @@
         sqrt((sumx2 - sumx**2/n) * (sumy2 - sumy**2/n))
     r2=r2**2
     RETURN
+
     END
